@@ -1,6 +1,14 @@
 
 /** 
+ * // 
+     function f(x){
+          let y = g(x);
+          return y;
+     }
+    调用函数g之后，还有别的操作，所以不属于尾调用，即使语义完全一样。
+
  *  tco目前只有Safari的js引擎支持，Chrome和Nodejs以前支持过
+ 
      function foo(x) {
        return x
      }
